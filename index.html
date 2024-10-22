@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Tic-Tac-Toe</h1>
+        <div id="scoreboard">
+            <div class="score">
+                <span class="icon"><img src="./icons/robot.gif" alt="Robot"></span>
+                <span id="computer-score">0</span>
+            </div>
+            <div class="score">
+                <span class="icon"><img src="./icons/husband.gif" alt="User"></span>
+                <span id="player-score">0</span>
+            </div>
+        </div>
+       
+        
+
+        
+        <div id="message">X yoki O tanlang!</div><br>
+        <div class="button-container">
+            <button class="button-34" onclick="chooseSymbol('X')" role="button">X</button>
+            <button class="button-34" onclick="chooseSymbol('O')" role="button">O</button>
+        </div>
+        <div id="board" class="board"></div>
+        <!-- HTML !-->
+        <button class="button-49" id="restart" onclick="restartGame()" style="display: none;" role="button">Yana O'ynash</button>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
